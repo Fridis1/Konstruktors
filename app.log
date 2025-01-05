@@ -20,3 +20,15 @@
 2025-01-06 00:27:56,329 - INFO - Database changes committed.
 2025-01-06 00:27:56,329 - INFO - Retrieved 3 unique domains.
 2025-01-06 00:27:56,330 - INFO - Database connection closed.
+2025-01-06 01:01:41,371 - INFO - Connected to database: database.db
+2025-01-06 01:01:41,373 - INFO - Ensured 'schema_migrations' table exists.
+2025-01-06 01:01:41,373 - DEBUG - Applied migrations: set()
+2025-01-06 01:01:41,373 - INFO - Applying migration: 001_create_email_address.sql
+2025-01-06 01:01:41,388 - INFO - Migration applied successfully: 001_create_email_address.sql
+2025-01-06 01:01:41,388 - INFO - Applying migration: 002_create_domain_name.sql
+2025-01-06 01:01:41,402 - INFO - Migration applied successfully: 002_create_domain_name.sql
+2025-01-06 01:01:41,402 - INFO - Applying migration: 003_create_weekday.sql
+2025-01-06 01:01:41,415 - INFO - Migration applied successfully: 003_create_weekday.sql
+2025-01-06 01:01:41,415 - INFO - Applying migration: 004_create_spam_confidence.sql
+2025-01-06 01:01:41,418 - INFO - Migration applied successfully: 004_create_spam_confidence.sql
+2025-01-06 01:01:41,419 - INFO - All migrations applied and database connection closed.
