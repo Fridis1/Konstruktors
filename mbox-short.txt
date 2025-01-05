@@ -1,0 +1,6 @@
+From user1@example.com Mon
+X-DSPAM-Confidence: 0.8475
+From user2@domain.com Tue
+X-DSPAM-Confidence: 0.7654
+From user3@otherdomain.org Wed
+X-DSPAM-Confidence: 0.8932
