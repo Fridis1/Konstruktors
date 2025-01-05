@@ -1,6 +1,7 @@
 import sqlite3
 import os
 import logging
+import configparser
 
 # Configure logging
 logging.basicConfig(
@@ -12,9 +13,13 @@ logging.basicConfig(
     ]
 )
 
-# Define database and migrations directory
-DB_NAME = 'database.db'
-MIGRATIONS_DIR = 'migrations'
+# Read configuration from config.ini
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+# Get database name and migrations directory
+DB_NAME = config['database']['db_name']
+MIGRATIONS_DIR = 'migrations'  # Default folder for migrations
 
 def connect_to_database(db_name):
     """Connect to the SQLite database and return the connection and cursor."""
@@ -63,6 +68,10 @@ def apply_migration(cursor, connection, migration_file):
 def apply_all_migrations(cursor, connection):
     """Apply all unapplied migrations."""
     applied_migrations = get_applied_migrations(cursor)
+    if not os.path.exists(MIGRATIONS_DIR):
+        logging.error(f"Migrations directory '{MIGRATIONS_DIR}' does not exist.")
+        raise FileNotFoundError(f"Migrations directory '{MIGRATIONS_DIR}' does not exist.")
+        
     migration_files = sorted(f for f in os.listdir(MIGRATIONS_DIR) if f.endswith('.sql'))
 
     for migration_file in migration_files:
