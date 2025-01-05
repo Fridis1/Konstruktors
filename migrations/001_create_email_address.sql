@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS email_address (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email_address TEXT UNIQUE
+);

@@ -1,0 +1,78 @@
+2025-01-06 00:27:56,319 - INFO - Starting the application.
+2025-01-06 00:27:56,320 - INFO - Connected to database: test.db
+2025-01-06 00:27:56,320 - INFO - Ensured table 'email_address' exists.
+2025-01-06 00:27:56,320 - INFO - Ensured table 'domain_name' exists.
+2025-01-06 00:27:56,320 - INFO - Ensured table 'weekday' exists.
+2025-01-06 00:27:56,320 - INFO - Ensured table 'spam_confidence_level' exists.
+2025-01-06 00:27:56,320 - INFO - Processing file: mbox-short.txt
+2025-01-06 00:27:56,324 - DEBUG - Processed email: user1@example.com (ID: 1)
+2025-01-06 00:27:56,324 - DEBUG - Processed domain: example.com (ID: 1)
+2025-01-06 00:27:56,324 - DEBUG - Processed weekday: Mon (ID: 1)
+2025-01-06 00:27:56,324 - DEBUG - Inserted spam confidence level: 0.8475
+2025-01-06 00:27:56,324 - DEBUG - Processed email: user2@domain.com (ID: 2)
+2025-01-06 00:27:56,324 - DEBUG - Processed domain: domain.com (ID: 2)
+2025-01-06 00:27:56,324 - DEBUG - Processed weekday: Tue (ID: 2)
+2025-01-06 00:27:56,324 - DEBUG - Inserted spam confidence level: 0.7654
+2025-01-06 00:27:56,326 - DEBUG - Processed email: user3@otherdomain.org (ID: 3)
+2025-01-06 00:27:56,326 - DEBUG - Processed domain: otherdomain.org (ID: 3)
+2025-01-06 00:27:56,326 - DEBUG - Processed weekday: Wed (ID: 3)
+2025-01-06 00:27:56,326 - DEBUG - Inserted spam confidence level: 0.8932
+2025-01-06 00:27:56,329 - INFO - Database changes committed.
+2025-01-06 00:27:56,329 - INFO - Retrieved 3 unique domains.
+2025-01-06 00:27:56,330 - INFO - Database connection closed.
+2025-01-06 01:01:41,371 - INFO - Connected to database: database.db
+2025-01-06 01:01:41,373 - INFO - Ensured 'schema_migrations' table exists.
+2025-01-06 01:01:41,373 - DEBUG - Applied migrations: set()
+2025-01-06 01:01:41,373 - INFO - Applying migration: 001_create_email_address.sql
+2025-01-06 01:01:41,388 - INFO - Migration applied successfully: 001_create_email_address.sql
+2025-01-06 01:01:41,388 - INFO - Applying migration: 002_create_domain_name.sql
+2025-01-06 01:01:41,402 - INFO - Migration applied successfully: 002_create_domain_name.sql
+2025-01-06 01:01:41,402 - INFO - Applying migration: 003_create_weekday.sql
+2025-01-06 01:01:41,415 - INFO - Migration applied successfully: 003_create_weekday.sql
+2025-01-06 01:01:41,415 - INFO - Applying migration: 004_create_spam_confidence.sql
+2025-01-06 01:01:41,418 - INFO - Migration applied successfully: 004_create_spam_confidence.sql
+2025-01-06 01:01:41,419 - INFO - All migrations applied and database connection closed.
+2025-01-06 01:26:44,150 - INFO - Starting the application.
+2025-01-06 01:26:44,160 - INFO - Connected to database: test.db
+2025-01-06 01:26:44,160 - INFO - Ensured table 'email_address' exists.
+2025-01-06 01:26:44,160 - INFO - Ensured table 'domain_name' exists.
+2025-01-06 01:26:44,162 - INFO - Ensured table 'weekday' exists.
+2025-01-06 01:26:44,162 - INFO - Ensured table 'spam_confidence_level' exists.
+2025-01-06 01:26:44,169 - INFO - Processing file: mbox-short.txt
+2025-01-06 01:26:44,171 - DEBUG - Processed email: user1@example.com (ID: 1)
+2025-01-06 01:26:44,171 - DEBUG - Processed domain: example.com (ID: 1)
+2025-01-06 01:26:44,172 - DEBUG - Processed weekday: Mon (ID: 1)
+2025-01-06 01:26:44,172 - DEBUG - Inserted spam confidence level: 0.8475
+2025-01-06 01:26:44,172 - DEBUG - Processed email: user2@domain.com (ID: 2)
+2025-01-06 01:26:44,172 - DEBUG - Processed domain: domain.com (ID: 2)
+2025-01-06 01:26:44,172 - DEBUG - Processed weekday: Tue (ID: 2)
+2025-01-06 01:26:44,172 - DEBUG - Inserted spam confidence level: 0.7654
+2025-01-06 01:26:44,172 - DEBUG - Processed email: user3@otherdomain.org (ID: 3)
+2025-01-06 01:26:44,173 - DEBUG - Processed domain: otherdomain.org (ID: 3)
+2025-01-06 01:26:44,173 - DEBUG - Processed weekday: Wed (ID: 3)
+2025-01-06 01:26:44,173 - DEBUG - Inserted spam confidence level: 0.8932
+2025-01-06 01:26:44,176 - INFO - Database changes committed.
+2025-01-06 01:26:44,176 - INFO - Retrieved 3 unique domains.
+2025-01-06 01:26:44,176 - INFO - Database connection closed.
+2025-01-06 01:31:49,831 - INFO - Starting the application.
+2025-01-06 01:31:49,831 - INFO - Connected to database: test.db
+2025-01-06 01:31:49,831 - INFO - Ensured table 'email_address' exists.
+2025-01-06 01:31:49,831 - INFO - Ensured table 'domain_name' exists.
+2025-01-06 01:31:49,831 - INFO - Ensured table 'weekday' exists.
+2025-01-06 01:31:49,833 - INFO - Ensured table 'spam_confidence_level' exists.
+2025-01-06 01:31:49,833 - INFO - Processing file: mbox-short.txt
+2025-01-06 01:31:49,834 - DEBUG - Processed email: user1@example.com (ID: 1)
+2025-01-06 01:31:49,834 - DEBUG - Processed domain: example.com (ID: 1)
+2025-01-06 01:31:49,834 - DEBUG - Processed weekday: Mon (ID: 1)
+2025-01-06 01:31:49,834 - DEBUG - Inserted spam confidence level: 0.8475
+2025-01-06 01:31:49,834 - DEBUG - Processed email: user2@domain.com (ID: 2)
+2025-01-06 01:31:49,834 - DEBUG - Processed domain: domain.com (ID: 2)
+2025-01-06 01:31:49,836 - DEBUG - Processed weekday: Tue (ID: 2)
+2025-01-06 01:31:49,836 - DEBUG - Inserted spam confidence level: 0.7654
+2025-01-06 01:31:49,836 - DEBUG - Processed email: user3@otherdomain.org (ID: 3)
+2025-01-06 01:31:49,836 - DEBUG - Processed domain: otherdomain.org (ID: 3)
+2025-01-06 01:31:49,836 - DEBUG - Processed weekday: Wed (ID: 3)
+2025-01-06 01:31:49,836 - DEBUG - Inserted spam confidence level: 0.8932
+2025-01-06 01:31:49,838 - INFO - Database changes committed.
+2025-01-06 01:31:49,839 - INFO - Retrieved 3 unique domains.
+2025-01-06 01:31:49,840 - INFO - Database connection closed.
