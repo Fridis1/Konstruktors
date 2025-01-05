@@ -1,38 +1,46 @@
 import sqlite3
+import configparser
+
+# Load configuration variables from config.ini
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+DB_NAME = config['database']['db_name']
+INPUT_FILE = config['file']['input_file']
 
 # Connect to the SQLite database (or create it if it doesn't exist)
-connect = sqlite3.connect("test.db")
+connect = sqlite3.connect(DB_NAME)
 cursor = connect.cursor()
 
 # Create the email_address table if it doesn't already exist
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS email_address (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,  # Unique ID for each email
-    email_address TEXT UNIQUE              # Email address, must be unique
+    id INTEGER PRIMARY KEY AUTOINCREMENT,  
+    email_address TEXT UNIQUE              
 )
 """)
 
 # Create the domain_name table if it doesn't already exist
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS domain_name (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,  # Unique ID for each domain
-    domain_name TEXT UNIQUE                # Domain name, must be unique
+    id INTEGER PRIMARY KEY AUTOINCREMENT,  
+    domain_name TEXT UNIQUE                
 )
 """)
 
 # Create the weekday table if it doesn't already exist
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS weekday (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,  # Unique ID for each weekday
-    weekday TEXT UNIQUE                    # Weekday name, must be unique
+    id INTEGER PRIMARY KEY AUTOINCREMENT,  
+    weekday TEXT UNIQUE                    
 )
 """)
 
 # Create the spam_confidence_level table if it doesn't already exist
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS spam_confidence_level (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,  # Unique ID for each spam confidence level
-    spam_confidence_level REAL             # Floating-point number for spam confidence
+    id INTEGER PRIMARY KEY AUTOINCREMENT,  
+    spam_confidence_level REAL             
 )
 """)
 
